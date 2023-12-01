@@ -30,7 +30,8 @@ function showTime() {
         monthEn = 'Dec';
     }
     let day = today.getDate();
-    let currentDate = year + ' - ' + monthEn + ' - ' + day;
+    var dayString = (day < 10 ? ("0" + day) : day)
+    let currentDate = year + ' - ' + monthEn + ' - ' + dayString;
     let hour = today.getHours();
     let min = today.getMinutes();
     let sec = today.getSeconds();
