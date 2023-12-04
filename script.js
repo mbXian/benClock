@@ -5,33 +5,33 @@ function showTime() {
     let month = today.getMonth() + 1; // 月份从 0 到 11，所以需要加 1
     var monthEn = '';
     if (month === 1) {
-        monthEn = 'Jan';
+        monthEn = 'Jan.';
     } else if (month === 2) {
-        monthEn = 'Feb';
+        monthEn = 'Feb.';
     } else if (month === 3) {
-        monthEn = 'Mar';
+        monthEn = 'Mar.';
     } else if (month === 4) {
-        monthEn = 'Apr';
+        monthEn = 'Apr.';
     } else if (month === 5) {
         monthEn = 'May';
     } else if (month === 6) {
-        monthEn = 'Jun';
+        monthEn = 'June';
     } else if (month === 7) {
-        monthEn = 'Jul';
+        monthEn = 'July';
     } else if (month === 8) {
-        monthEn = 'Aug';
+        monthEn = 'Aug,';
     } else if (month === 9) {
-        monthEn = 'Sep';
+        monthEn = 'Sep.';
     } else if (month === 10) {
-        monthEn = 'Oct';
+        monthEn = 'Oct.';
     } else if (month === 11) {
-        monthEn = 'Nov';
+        monthEn = 'Nov.';
     } else if (month === 12) {
-        monthEn = 'Dec';
+        monthEn = 'Dec.';
     }
     let day = today.getDate();
     var dayString = (day < 10 ? ("0" + day) : day)
-    let currentDate = year + ' - ' + monthEn + ' - ' + dayString;
+    let currentDate = monthEn + ' - ' + dayString;
     let hour = today.getHours();
     let min = today.getMinutes();
     let sec = today.getSeconds();
