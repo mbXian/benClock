@@ -54,6 +54,6 @@ function showTime() {
     document.getElementById("clock")
             .innerHTML = currentTime;
     document.getElementById("weekdayLabel")
-            .innerHTML = dayOfWeek;
+            .innerHTML = "&nbsp;" + dayOfWeek + "&nbsp;";
 }
 showTime();
